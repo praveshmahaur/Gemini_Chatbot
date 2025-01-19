@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+// import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_gemini/flutter_gemini.dart';
-import 'package:gemini_app/constant.dart';
+// import 'package:gemini_app/constant.dart';
 import 'package:gemini_app/home_screen.dart';
 
-void main() {
-  Gemini.init(apiKey: API_KEY);
+Future main() async{
+  // await dotenv.load(fileName: ".env");
+  // Gemini.init(apiKey: env['API_KEY']);
+  Gemini.init(apiKey: "AIzaSyCOB-1hI-i7rX8-f1uYLqK0lMeXyzZ8fJo");
   runApp(const MyApp());
 }
 

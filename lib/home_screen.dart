@@ -97,7 +97,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         centerTitle: true,
       ),
-      drawer: Drawer(
+      drawer: const Drawer(
         child: Column(
           children: [
             Spacer(),
@@ -115,7 +115,7 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () {
                 sendImageInput();
               },
-              icon: Icon(Icons.image))
+              icon: const Icon(Icons.image))
         ]),
       ),
     );
